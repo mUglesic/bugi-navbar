@@ -1,6 +1,7 @@
 <script lang="ts">
 
   import Navbar from './lib/navbar.svelte';
+  import LetterN from '/LetterN.png';
 
   const navbarOptions = [{name: 'DOMOV', link: '#top'}, {name: 'O NAS', link: '#top'}, {name: 'KONTAKT', link: '#top'}, {name: 'KONTAKT', link: '#top'}, {name: 'KONTAKT', link: '#top'}];
 
@@ -8,7 +9,7 @@
 
 <div class="h-[120vh] flex flex-col place-items-center">
 
-  <img class="h-96 absolute top-0 right-0" alt="N" src="/LetterN.png">
+  <img class="h-96 absolute top-0 right-0" alt="N" src={LetterN}>
 
   <Navbar menuOptions={navbarOptions} />
 
